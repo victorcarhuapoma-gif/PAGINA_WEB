@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor{
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: black;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+#cohete{
+    position: absolute;
+    top: 50px;
+    left: 150px;
+}
+
+#cohete img{
+    width: 100px;
+}
+
+
+.estrella{
+    width: 2px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    animation: mover 3s linear infinite;
+}
+
+
+.estrella:nth-child(2){ top: 20px; animation-duration: 2s; }
+.estrella:nth-child(3){ top: 80px; animation-duration: 4s; }
+.estrella:nth-child(4){ top: 150px; animation-duration: 3s; }
+
+
+@keyframes mover{
+    from{
+        left: 400px;
+    }
+    to{
+        left: -10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div id="contenedor">
+    <div class="estrella"></div>
+    <div class="estrella"></div>
+    <div class="estrella"></div>
+    <div id="cohete"><img src="img/peepo-rocket.gif"></div>
+
+</div>
+
+</body>
+</html>
