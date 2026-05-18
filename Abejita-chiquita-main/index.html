@@ -1,0 +1,113 @@
+<html>
+<head>
+    <title>Animaciones 3</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .contenedor{
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+            position: relative;
+            margin: 0 auto;
+            overflow : hidden;
+            background-image: url(img/fondo-paisaje-rural-dibujado-mano_23-2150597695.avif);
+            background-size: cover;
+        }
+        .cuadrito{
+            width:50px;
+            height: 50px;
+            position: absolute;
+            left: -100px;
+            top: 50px;
+
+
+            animation: cuadrito 4s infinite;
+        }
+
+        @keyframes cuadrito{
+            0%{
+                left: -100px;
+                top: 50px;
+                rotate: 0deg;
+            }
+            50%{
+                left: 175px;
+                top: 0px;
+                rotate: 60deg;
+            }
+            100%{
+                left: 400px;
+                top: 50px;
+                rotate: 0deg;
+            }
+        }
+
+        .cuadrito img{
+            width: 50px;
+            height: 50px;
+        }
+
+.cuadrito2{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 150px;
+    left: -50px;
+    animation: cuadrito2 3s infinite;
+}
+@keyframes cuadrito2{
+    0%{
+        top: 200px;
+        left: -50px;
+        rotate: 0deg; 
+    }
+    50%{
+        top: 50px;
+        left: 175px;
+        rotate: 60deg; 
+    }
+    100%{
+        top: 150px;
+        left: 450px;
+        rotate: 0deg; 
+    }
+}
+.cuadrito2 img{
+    width: 50px;
+    height: 50px;
+}
+    .bottom{
+    display: inline-block;
+    padding: 15px 35px;
+    border: 2px solid #000000;
+    color: #ea3737;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+.bottom:hover {
+    background-color: #f90202;
+}
+        </style>
+    </head>
+    <body>
+       <div class="bottom"> <a href="../index.html">Atras </a></div>
+    <div class="contenedor">
+        <div class="cuadrito">
+            <img src="img/bee.gif" alt="">
+        </div>
+        <div class="cuadrito2">
+            <img src="img/bee.gif" alt="">
+        </div>
+        
+    </div>
+   
+
+</body>
+</html>
