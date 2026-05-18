@@ -1,38 +1,76 @@
+
 <html>
-<head>
-    <title>ESTILOS CSS 1</title>
-    
-    <style type="text/css">
+        <head>
+        <title>CSS ANIMATION</title>
         
+    <style type="text/css">
+
         *{
-            margin: 0px;
-            padding: 0px;
-            float: left;
+            margin: 2%;
+            padding: 0;
+            font-family: "century gothic";
+            text-align: center;
+
         }
-        #cuadrito1, #cuadrito2{
-            height: 100px;
-            width: 100px;
-            display: inline-block;/*Esto sirve para alinear de forma horizontal*/
-        }
-        #cuadrito1{
-            background-color: white;
-        }
-        #cuadrito2{
-            background-color: black;
-        }
-        #contenedor1{
-            height: 100px;
-            width: 1000px;
-            background-color: rgb(158, 93, 8);
-            justify-content: center; 
-            align-items: center;     
-            display: flex;
-        }
-        #contenedor1 div{
-            justify-content: center;
-            align-content: center;
-        }
-  .bottom{
+    body{
+        background-color: rgb(245, 168, 168);
+
+    }
+    h1{
+        color:rgb(0, 0, 0);
+        font-size: 40px;
+        animation-name: texto;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    @keyframes texto{
+    from{
+        color:blue;
+
+    }
+    to{
+        color:red;
+    }
+    }
+    p{
+        color:black;
+        animation-name:parrafo;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-delay: 3s;
+        animation-fill-mode:forwards;
+    }   
+    @keyframes parrafo{
+    from{
+        margin-left: 100%;
+        width: 400%;
+        color:black
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+        color:black;
+    }
+}
+img{
+    width: 250px;
+    opacity: 0;
+    border-radius: 10%;
+    animation-name:foto;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+    animation-delay: 6s;
+    }
+    @keyframes foto{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    }
+.bottom{
     display: inline-block;
     padding: 15px 35px;
     border: 2px solid #000000;
@@ -46,115 +84,28 @@
 .bottom:hover {
     background-color: #f90202;
 }
-
-
-img{
-    display: block;
-    margin: auto;
-}
-
-
-#cuadrito2 img{
-    margin: 0px auto;
-    display: block;
-}
-
-#cuadrito1 img{
-    padding: 0px;
-    margin: 0px auto;
-    display: block;
-
-}
         </style>
     </head>
     <body>
-     
+       <div class="bottom"> <a href="../index.html">Atras </a></div>
+       
+    <br>
+    <img src="img/people-in-ai-sam-altman.webp">
 
 
-    <div id="contenedor1">
-        <div id="cuadrito1"><img src="img/1.png" alt="" width="50px"> </div>
-        <div id="cuadrito2"><img src="img/1.png" alt="" width="50px"></div>
-        <div id="cuadrito1"><img src="img/1.png" alt="" width="50px"></div>
-        <div id="cuadrito2"><img src="img/1.png" alt="" width="50px"></div>
-        <div id="cuadrito1"><img src="img/1.png" alt="" width="50px"></div>
-        <div id="cuadrito2"><img src="img/1.png" alt="" width="50px"></div>
-        <div id="cuadrito1"><img src="img/1.png" alt="" width="50px"></div>
-        <div id="cuadrito2"><img src="img/1.png" alt="" width="50px"></div>
-    </div>
 
-    <div class="bottom"> <a href="../index.html">Atras </a></div>
+<h1>SAMUEL HARRIS ALTMAN</h1>
+<P>Samuel Harris Altman (Chicago, Illinois; 22 de abril de 1985), conocido como Sam Altman, es un empresario, inversionista, programador y bloguero estadounidense.[2] Es director ejecutivo de OpenAI y expresidente de Y Combinator, y se le considera una de las figuras principales en el desarrollo de la inteligencia artificial.[3][4][5][6]
 
+Su patrimonio neto actual es de 2100 millones de dólares, de acuerdo con Forbes.</P>
+    <img src="img/14.webp">
+<p>
+    Altman creció en San Luis (Misuri), en una familia judía, como el mayor de cuatro hermanos. Su madre es dermatóloga y su padre era un agente inmobiliario. Recibió su primera computadora a la edad de ocho años.[8] Asistió a la escuela secundaria John Burroughs y estudió Ciencias de la Computación en la Universidad de Stanford hasta que abandonó los estudios en 2005.[9] En 2017, recibió un título honorario de la Universidad de Waterloo.
+</p>
+</style>
+</body>
+</html>
 
-    <div id="contenedor1">
-        <div id="cuadrito2"><img src="img/1.png" alt="" width="50px"></div>
-        <div id="cuadrito1"><img src="img/1.png" alt="" width="50px"></div>
-        <div id="cuadrito2"><img src="img/1.png" alt="" width="50px"></div>
-        <div id="cuadrito1"><img src="img/1.png" alt="" width="50px"></div>
-        <div id="cuadrito2"><img src="img/1.png" alt="" width="50px"></div>
-        <div id="cuadrito1"><img src="img/1.png" alt="" width="50px"></div>
-        <div id="cuadrito2"><img src="img/1.png" alt="" width="50px"></div>
-        <div id="cuadrito1"><img src="img/1.png" alt="" width="50px"></div>
-    </div>
-        <div id="contenedor1">
-            <div id="cuadrito1"></div>
-            <div id="cuadrito2"></div>
-            <div id="cuadrito1"></div>
-            <div id="cuadrito2"></div>
-            <div id="cuadrito1"></div>
-            <div id="cuadrito2"></div>
-            <div id="cuadrito1"></div>
-            <div id="cuadrito2"></div>
-        </div>
-        <div id="contenedor1">
-            <div id="cuadrito2"></div>
-            <div id="cuadrito1"></div>
-            <div id="cuadrito2"></div>
-            <div id="cuadrito1"></div>
-            <div id="cuadrito2"></div>
-            <div id="cuadrito1"></div>
-            <div id="cuadrito2"></div>
-            <div id="cuadrito1"></div>
-        </div>
-        <div id="contenedor1">
-            <div id="cuadrito1"></div>
-            <div id="cuadrito2"></div>
-            <div id="cuadrito1"></div>
-            <div id="cuadrito2"></div>
-            <div id="cuadrito1"></div>
-            <div id="cuadrito2"></div>
-            <div id="cuadrito1"></div>
-            <div id="cuadrito2"></div>
-        </div>
-        <div id="contenedor1">
-            <div id="cuadrito2"></div>
-            <div id="cuadrito1"></div>
-            <div id="cuadrito2"></div>
-            <div id="cuadrito1"></div>
-            <div id="cuadrito2"></div>
-            <div id="cuadrito1"></div>
-            <div id="cuadrito2"></div>
-            <div id="cuadrito1"></div>
-        </div>
-        <div id="contenedor1">
-            <div id="cuadrito1"><img src="img/2.png" alt="" width="100px"></div>
-            <div id="cuadrito2"><img src="img/2.png" alt="" width="100px"></div>
-            <div id="cuadrito1"><img src="img/2.png" alt="" width="100px"></div>
-            <div id="cuadrito2"><img src="img/2.png" alt="" width="100px"></div>
-            <div id="cuadrito1"><img src="img/2.png" alt="" width="100px"></div>
-            <div id="cuadrito2"><img src="img/2.png" alt="" width="100px"></div>
-            <div id="cuadrito1"><img src="img/2.png" alt="" width="100px"></div>
-            <div id="cuadrito2"><img src="img/2.png" alt="" width="100px"></div>
-        </div>
-        <div id="contenedor1">
-            <div id="cuadrito2"><img src="img/2.png" alt="" width="100px"></div>
-            <div id="cuadrito1"><img src="img/2.png" alt="" width="100px"></div>
-            <div id="cuadrito2"><img src="img/2.png" alt="" width="100px"></div>
-            <div id="cuadrito1"><img src="img/2.png" alt="" width="100px"></div>
-            <div id="cuadrito2"><img src="img/2.png" alt="" width="100px"></div>
-            <div id="cuadrito1"><img src="img/2.png" alt="" width="100px"></div>
-            <div id="cuadrito2"><img src="img/2.png" alt="" width="100px"></div>
-            <div id="cuadrito1"><img src="img/2.png" alt="" width="100px"></div>
-        </div>
 
          
 
