@@ -1,0 +1,319 @@
+<html>
+    <head>
+        <title>coco</title>
+
+    <style>
+
+*{
+    padding:0px;
+    margin: 0px;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.contenedor{
+    width: 400px;
+    height: 800px;
+    background-color: rgb(251, 226, 0);
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.coco{ 
+  
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 100px;
+    top: -200px;
+    transition: 1s;
+    animation: coco 5s  forwards 1s;
+}
+
+@keyframes coco{
+                0%{
+                    top:-50px;
+                }
+                50%{
+                    top:150px;
+                    rotate:-10deg;
+                }
+                100%{
+                    top:800px;
+                    rotate:0deg;
+                }
+            }
+
+.coco2{ 
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 100px;
+    right: -300px;
+    transition: 1s;
+    animation: coco2 5s  forwards 1s;
+}
+
+@keyframes coco2{
+                 0%{
+                right:-150px;
+                rotate:(180deg);
+            }
+            50%{
+                right:150px;
+                rotate:(220deg);
+            }
+            100%{
+                right:500px;
+                rotate:(360deg);
+            }
+        }
+
+.coco3{ 
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 300px;
+    right: -300px;
+    transition: 1s;
+    animation: coco3 5s  forwards 1s;
+}
+
+@keyframes coco3{
+                 0%{
+                right:-400px;
+                rotate:(180deg);
+            }
+            50%{
+                right:300px;
+                rotate:(210deg);
+            }
+            100%{
+                right:500px;
+               rotate :(350deg);
+            }
+        }
+    
+.coco4{ 
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 150px;
+    left: -500px;
+    transition: 1s;
+    animation: coco4 5s  forwards 1s;
+}
+
+@keyframes coco4{
+                 0%{
+                left:-600px;
+                rotate:(180deg);
+            }
+            50%{
+                left:100px;
+                rotate:(210deg);
+            }
+            100%{
+                left:600px;
+               rotate :(350deg);
+            }
+        }
+
+
+.coco5{ 
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 0px;
+    top: -100px;
+    transition: 1s;
+    animation: coco5 5s  forwards 1s;
+}
+
+@keyframes coco5{
+                0%{
+                    right: 100px;
+                    top: -100px;
+                }
+                50%{
+                    top:350px;
+                    rotate:-10deg;
+                }
+                100%{
+                    top:800px;
+                    rotate:0deg;
+                }
+            }
+
+
+
+
+.rama {
+    width: 1000px;
+    height: 1000px;
+    background-size: cover;
+    position: absolute;
+    left: -5px;
+    top: -500px;
+    rotate: 10deg;
+    animation: rama 1.5s infinite alternate linear;
+}
+
+@keyframes rama {
+    from {
+        rotate: 10deg;
+    }
+    to {
+        rotate: 22deg;
+    }
+}
+
+.text{
+    position:absolute;
+    top: 300px;
+    left: -400px;
+    height: 100px;
+    width: 800px;
+    font-size: 40px;
+    font-family: "Agency F8";
+    color:rgb(251, 251, 251);
+    transition: 1s;
+    animation: adelante 3s   forwards  2s;
+    animation-delay: 2s;
+        }
+
+ 
+    @keyframes adelante{
+                 0%{
+                left:-200px;
+                
+            }
+            50%{
+                left:50px;
+                
+            }
+            100%{
+                left:400px;
+              
+            }
+        }
+
+
+.textfinal{
+    position:absolute;
+    top:250px;
+    left:50%;
+    transform:translateX(-50%);
+    color:white;
+    text-align:center;
+    opacity:0;
+    animation:textfinal 2s forwards 5s;
+}
+
+@keyframes textfinal{
+    0%{
+        opacity:0;
+        top:500px;
+    }
+
+    50%{
+        opacity:0.5;
+        top:350px;
+    }
+
+    100%{
+        opacity:1;
+        top:300px;
+    }
+}
+
+.coco6{ 
+    height:100px;
+    width:100px;
+    position:absolute;
+    left:80px;
+    top:800px;
+    transition:1s;
+    animation:coco6 5s forwards 6.5s;
+}
+
+@keyframes coco6{
+    0%{
+        top:500px;
+    }
+
+    50%{
+        top:250px;
+    }
+
+    100%{
+        top:350px;
+    }
+}
+
+.cococonflor{
+     height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 80px;
+    top: -200px;
+    transition: 1s;
+    animation: centro 5s  forwards 6.5s;
+}
+
+@keyframes centro{
+      0%{
+        top:-500px;
+    }
+
+    50%{
+        top:200px;
+    }
+
+    100%{
+        top:120px;
+    }
+}
+.bottom{
+    display: inline-block;
+    padding: 15px 35px;
+    border: 2px solid #000000;
+    color: #ea3737;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+.bottom:hover {
+    background-color: #f90202;
+}
+
+
+    </style>
+    
+</head>
+    <body>
+
+        <div class="bottom"><a href="../index.html">Atras </a></div>
+        <div class="contenedor">
+            <div class="coco"><img src="img/coco.png" alt="" width="200px"></div>
+            <div class="coco2"><img src="img/coco2.png" alt="" width="200px" ></div>
+            <div class="coco3"><img src="img/COCO3.png" alt="" width="200px"></div>
+            <div class="coco4"><img src="img/COCO4.png" alt="" width="100px"></div>
+            <div class="coco5"><img src="img/coco5.png" alt="" width="150px"></div>
+            <div class="rama"><img src="img/rama.png" alt=""></div>
+            <div class="text">YA PROBASTE <br> EL NUEVO SABOR</div>
+            <div class="coco6"><img src="img/coco con flor.png" alt="" width="300"></div>
+            <div class="textfinal"><h1>COCO</h1><h2>+</h2><h2>VAINILLA</h2></div>
+            <div class="cococonflor"><img src="img/coco con flor.png" alt="" width="300px">
+</div></div>
+            
+           
+        
+
+
+    </body>
+</html>
