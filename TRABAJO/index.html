@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <title>Tarjetas Animacion de HTML,CSS,JS</title>
+        <style>
+*{
+    padding:0px;
+    margin: 0px;
+}
+
+.contenedor{
+    width: 600px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.tarjeta1, .tarjeta2, .tarjeta3{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    left: -300px;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+        
+}
+.tarjeta1{
+    background-image: url(img/Gemini_Generated_Image_hqtmxlhqtmxlhqtm.png);
+    animation: tarjeta1 3s 1 forwards;
+}
+.tarjeta2{
+    background-image: url(img/Gemini_Generated_Image_gjwmfvgjwmfvgjwm.png);
+    background-size: cover;
+    animation: tarjeta2 3s  1 forwards 3s;
+}
+.tarjeta3{
+    background-image: url(img/Gemini_Generated_Image_gfam6dgfam6dgfam.png);
+    animation: tarjeta3 3s 1 forwards 6s;
+}
+
+
+@keyframes tarjeta1 {
+    0% {
+        left: -300px;
+        transform: rotateY(180deg);
+
+    }
+
+    50% {
+        nav-left: 300px;
+
+    }
+    100%{
+        left: 0px;
+    }
+    
+    
+}
+
+@keyframes tarjeta2 {
+    0% {
+        left: -300px;
+        transform: rotateX(180deg);
+
+    }
+
+    50% {
+        nav-left: 0px;
+      
+
+    }
+    100%{
+        left: 200px;
+    } }
+
+
+    @keyframes tarjeta3 {
+    0% {
+        left: -300px;
+        transform: rotateZ(180deg);
+
+    }
+
+    50% {
+        nav-left:0 px;
+
+
+    }
+    100%{
+        left: 400px;
+    } }
+
+.tarjeta1:hover{
+    transition: 1s;
+    scale: 1.2;
+    z-index: 1;
+}
+
+.tarjeta2:hover{
+    transition: 1s;
+    scale: 1.2;
+    z-index: 1;
+}
+
+.tarjeta3:hover{
+    transition: 1s;
+    scale: 1.2;
+    z-index: 1;
+}
+.nombre{
+    position: absolute;
+    bottom: 50px;
+    width: 200px;
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+    color: white; 
+        }
+
+.tarjeta1 .nombre{
+    animation: tarjeta1 3s 1 forwards;
+    }
+
+.tarjeta2 .nombre{
+    animation: tarjeta1 3s 1 forwards 3s;
+    }
+
+.tarjeta3 .nombre{
+    animation: tarjeta1 3s 1 forwards 6s;
+    }
+.bottom{
+    display: inline-block;
+    padding: 15px 35px;
+    border: 2px solid #000000;
+    color: #ea3737;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+.bottom:hover {
+    background-color: #f90202;
+}
+        </style>
+    </head>
+    <body>
+       <div class="bottom"> <a href="../index.html">Atras </a></div>
+        <div class="Contenedor">
+
+            <div class="tarjeta1"><div class="nombre">HTML</div></div>
+            <div class="tarjeta2"> <div class="nombre">CSS</div></div>
+            <div class="tarjeta3"><div class="nombre">JS</div></div>
+
+
+        </div>
+    </body>
+</html>
