@@ -1,66 +1,73 @@
 <html>
 <head>
     <title>Mis Proyectos</title>
-    <style>
-        body{
-            background: rgb(0, 0, 0);
-            color: rgb(225, 80, 80);
-            font-family: Arial;
-            margin: 20px;
-        }
+<style>
+body{
+    background: #000;
+    color: white;
+    font-family: Arial;
+    margin: 20px;
+}
 
-        h1{
-            text-align: center;
-            color: red;
-            border: 3px solid blue;
-            padding: 20px;
-            border-radius: 50px;
-            
-        }
+h1{
+    text-align: center;
+    color: #ff1a1a;
+    border: 3px solid #00f7ff;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 20px #00f7ff;
+    text-shadow: 0 0 15px red;
+}
 
-        .contenedor{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 50px;
-            margin-top: 40px;
-        }
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
 
-        .card{
-            width: 300px;
-            border: 2px solid rgb(225, 85, 85);
-            text-align: center;
-            padding: 15px;
-        }
+.card{
+    width: 300px;
+    border: 2px solid #ff2b2b;
+    text-align: center;
+    padding: 15px;
+    background: #111;
+    box-shadow: 0 0 15px red;
+    transition: 0.8s;
+}
 
-        .card img{
-            width: 100%;
-            height: 180px;
-            border: 2px solid rgb(242, 67, 67);
-            
-        }
+.card img{
+    width: 100%;
+    height: 180px;
+    border: 2px solid #00f7ff;
+}
 
-        .card a{
-            color: white;
-            text-decoration: none;
-            font-size: 20px;
-            border: 2px solid rgb(242, 67, 67);
-            border-radius: 30px;
-             background-color: #f90202;
-        }
+.card a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid #ff2b2b;
+    border-radius: 30px;
+    background: linear-gradient(45deg,#ff0000,#ff6600);
+    padding: 8px 15px;
+    box-shadow: 0 0 10px red;
+}
 
-        .card:hover{
-            transition: 1s;
-            scale: 1.2;
-            z-index: 1;
-             background-color: #418df7;    
-        }
-      
-    </style>
+.card:hover{
+    transform: scale(1.15);
+    background: #001f4d;
+    box-shadow: 0 0 25px #00f7ff;
+}
+
+.card a:hover{
+    background: linear-gradient(45deg,#00f7ff,#0066ff);
+}
+</style>
 </head>
 <body>
 
-<h1>ANIMACION WEB PROYECT</h1>
+<h1>MIS PROYECTOS DE ANIMACIÓN WEB</h1>
 
 <div class="contenedor">
 
