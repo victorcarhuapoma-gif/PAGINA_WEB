@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLIP PATH CSS</title>
+    <style>
+        *{
+    padding:0px;
+    margin: 0px;
+}
+.contenedor{
+    width: 400px;
+    height: 400px;
+    background-color: aquamarine;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.gorrita{
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    position: absolute;
+    left: 140px;
+    top: 50px;
+
+}
+.cabeza{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    clip-path: circle(50% at 50% 50%);
+    position: absolute;
+    left: 140px;
+    top: 150px;
+
+}
+
+.cuerpo{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 111, 0);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    position: absolute;
+    left: 140px;
+    top: 250px;
+
+    }
+.brazo_izquierdo{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(255, 0, 0);
+   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    position: absolute;
+    left: 200px;
+    top: 270px;
+
+
+}
+.brazo_derecha{
+    width: 120px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    position: absolute;
+    left: 70px;
+    top: 270px;
+
+}
+
+.pierna_derecha{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+   clip-path: ellipse(24% 12% at 50% 50%);
+    position: absolute;
+    left: 110px;
+    top: 310px;
+
+}
+.pierna_izquierda{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    clip-path: ellipse(24% 12% at 50% 50%);
+    position: absolute;
+    left: 170px;
+    top: 310px;
+
+}
+ 
+    .bottom{
+    display: inline-block;
+    padding: 15px 35px;
+    border: 2px solid #000000;
+    color: #ea3737;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+.bottom:hover {
+    background-color: #f90202;
+}
+        </style>
+    </head>
+    <body>
+       <div class="bottom"> <a href="../index.html">Atras </a></div>
+    <div class="contenedor">
+    <div class="gorrita"> <img src="img/gorro.jpg" alt=""></div>
+        <div class="cabeza"><img src="img/cara.jpg" alt="" width="100"></div>
+    <div class="brazo_izquierdo"><img src="img/tree-branch-leaf-on-white-260nw-1139962724.webp" alt="" width="100"></div>
+    <div class="brazo_derecha"><img src="img/tree-branch-flat-style-spring-260nw-2341921495.jpg" alt="" width="120"></div>
+    <div class="pierna_derecha"></div>
+    <div class="pierna_izquierda"></div>
+     <div class="cuerpo"><img src="img/cuerpo.avif" alt="" width="100"></div>
+</div>
+</body>
+</html>
