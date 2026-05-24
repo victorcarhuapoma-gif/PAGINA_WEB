@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+         
+        }
+
+        body{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url(img/e6ae318721b5c87221aa4f5d860472a2.jpg);
+        }
+
+        .contendor{
+            width: 400px;
+            height: 700px;
+            border: 1px solid white;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .vapor{
+            width: 200%;
+            position: absolute;
+            z-index: 4;
+            top: 400px;
+            left: 0;
+
+            animation: vapor 10s forwards;
+        }
+
+        @keyframes vapor {
+            from{
+                left: 0;
+            }
+
+            to{
+                left: -200px;
+            }
+        }
+        .persona{
+            width: 800px;
+            position: absolute;
+            left: -200px;
+            top: 250px;
+            z-index: 3;
+
+            animation: persona 15s forwards;
+        }
+
+        @keyframes persona {
+
+            from{
+                top: 250px;
+                transform: scale(1);
+                filter: grayscale(100%);
+            }
+
+            to{
+                top: 200px;
+                transform: scale(1.2);
+                filter: grayscale(0%);
+            }
+        }
+
+        .paisaje{
+            width: 800px;
+            position: absolute;
+            left: -150px;
+            top: 0;
+            z-index: 2;
+
+            animation: paisaje 20s forwards;
+        }
+
+        @keyframes paisaje {
+
+            from{
+                top: 0;
+                filter: blur(2px);
+            }
+
+            to{
+                top: -100px;
+                filter: blur(0);
+            }
+        }
+
+        /* ===== CIELO ===== */
+        .cielo{
+            width: 700px;
+            position: absolute;
+            left: -150px;
+            top: 0;
+            z-index: 1;
+
+            animation: cielo 20s forwards;
+        }
+
+        @keyframes cielo {
+
+            from{
+                transform: scale(1);
+                filter: blur(2px);
+            }
+
+            to{
+                transform: scale(1.5);
+                filter: blur(0);
+            }
+        }
+.bottom{
+    display: inline-block;
+    padding: 15px 35px;
+    border: 2px solid #000000;
+    color: #ea3737;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-radius: 50px;
+    background-color: #f90202;
+    top: 100px;
+}
+.bottom:hover {
+    background-color: #02ff1f;
+}
+        </style>
+    </head>
+    <body>
+       <div class="bottom"> <a href="../index.html">Atras </a></div>
+    <div class="contendor">
+
+        <img class="cielo" src="img/CIELO.jpg" alt="">
+
+        <img class="paisaje" src="img/paisaje.png" alt="">
+
+        <img class="persona" src="img/persona.png" alt="">
+
+        <img class="vapor" src="img/VAPOR.png" alt="">
+
+    </div>
+
+</body>
+</html>
