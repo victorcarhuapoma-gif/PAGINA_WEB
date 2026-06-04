@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+ .contendor{
+    width: 890px;
+    height: 580px;
+    border: 1px solid rgb(54, 241, 57);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 2px rgb(54, 241, 57); ;
+ }
+
+body{
+     background-color: rgb(0, 0, 0);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100px;
+     
+}
+
+.paisaje{
+    width: 1000px;
+    height: 100px;
+    top: -10px;
+    left: -200px;
+    position: absolute;
+    animation: paisaje 5s ease-in-out 1 ;
+    z-index: 1;
+}
+ @keyframes paisaje {
+
+            0%{
+                transform: scale(1);
+                
+            }
+
+
+            100%{
+                transform: scale(0.8);
+                
+            }
+        }
+
+
+
+.borde{
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: -20px;
+    z-index: 2;
+    animation: borde 5s ease-in-out 1 ;
+}
+
+@keyframes borde {
+
+            from{
+                transform: scale(1);
+                
+            }
+
+            to{
+                transform: scale(1.5);
+                
+            }
+        }
+
+.NOMBRE{
+    height: 400px;
+    fill: transparent;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 0px;
+    stroke-dasharray: 0%;
+    animation: nombre 5s ease-in-out 1 ;
+    position: absolute;
+    opacity: 0;
+    z-index: 10;
+    box-shadow: wheat;
+}
+@keyframes nombre{
+    from{
+        opacity: 0;
+        stroke-width: 0px;
+        stroke-dasharray: 0%;
+    }
+    to{
+        opacity: 1;
+        stroke-width: 100px;
+        stroke-dasharray: 150%;
+    }
+}
+
+.bottom{
+    display: inline-block;
+    padding: 15px 35px;
+    border: 2px solid #ffffff;
+    color: #ea3737;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+.bottom:hover {
+    background-color: #f90202;
+}
